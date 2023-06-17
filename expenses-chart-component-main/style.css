@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:wght@700&family=Lobster&family=Merriweather+Sans&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@400;700&display=swap');
+:root{
+    /*colors*/
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+   --Medium-brown: hsl(28, 10%, 53%);
+   --Cream: hsl(27, 66%, 92%);
+   --Very-pale-orange: hsl(33, 100%, 98%);
+   /*fonts*/
+   --Font-size: 18px;
+   --font-family:'DM Sans' ;
+   --font-weight-regular:400;
+   --font-weight-bold:700;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Cream);
+    font-size: var(--Font-size);
+    font-family: var(--font-family);
+    width: 100vW;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.myBalance{
+    width: 450px;
+    height:100px;
+    background-color: var(--Soft-red);
+    display: flex;
+    gap: 180px;
+    border-radius: 15px;
+    color: var(--Very-pale-orange);
+   
+}
+p{
+font-weight: var(--font-weight-regular);
+color: var(--Medium-brown);
+}
+h1{
+    font-weight: var(--font-weight-bold);
+    color: var(--Dark-brown);
+}
+.description{
+    margin: 20px;
+}
+.description>p{
+    color: var(--Very-pale-orange);
+}
+.description>h1{
+    color: var(--Very-pale-orange);
+}
+.logo{
+    margin-top: 20px;
+}
+.container{
+    width: 450px;
+    height: 400px;
+    background-color: var(--Very-pale-orange);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.container>h2{
+    color: var(--Dark-brown);
+    margin: 20px;
+    padding-top: 15px;
+}
+.histogram{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    height: 100px;
+    width: 85%;
+    margin-left: 33px;
+    margin-top: 50px;
+}
+.bars{
+    width: 50px;
+    background-color: var(--Soft-red);
+    border-radius: 3px;
+}
+.bars>p{
+    
+    margin-left: 5px;
+    
+}
+hr{
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 25px;
+    color: var(--Medium-brown);
+}
+.cost{
+    display: flex;
+    gap: 120px;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: right;
+}
+#first{
+    height: 50px;
+}
+#first:hover::after {
+    content: "$66.36"
+}
+#first>p{
+    margin-top: 60px;
+}
+#second{
+    height: 80px;
+}
+#second:hover::after {
+    content: "$20.06"
+}
+#second>p{
+    margin-top: 90px;
+}
+#third{
+    height: 120px;
+    background-color: var(--Cyan);
+}
+#third:hover::after {
+    content: "$52.36"
+}
+#third>p{
+    margin-top: 130px;
+}
+#fourth{
+    height: 110px;
+}
+#fourth:hover::after {
+    content: "$31.07"
+}
+#fourth>p{
+    margin-top: 120px;
+}
+#fifth{
+    height: 90px;
+}
+#fifth:hover::after {
+    content: "$506.36"
+}
+#fifth>p{
+    margin-top: 100px;
+}
+#sixth{
+    height: 115px;
+}
+#sixth:hover::after {
+    content: "$100.36";
+}
+#sixth>p{
+    margin-top: 125px;
+}
+#seventh{
+    height: 90px;
+}
+#seventh:hover::after {
+    content: "$206.56"
+}
+#seventh>p{
+    margin-top: 100px;
+}
+h5{
+    color: var(--Dark-brown);
+}
+.last-month{
+    margin-top: 20px;
+}
+.bars>div{
+    display: none;
+}
