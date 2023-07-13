@@ -60,7 +60,7 @@ h1{
 }
 .container{
     width: 450px;
-    height: 400px;
+    height: 430px;
     background-color: var(--Very-pale-orange);
     border-radius: 15px;
     margin-top: 20px;
@@ -77,12 +77,13 @@ h1{
     height: 100px;
     width: 85%;
     margin-left: 33px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .bars{
     width: 50px;
     background-color: var(--Soft-red);
     border-radius: 3px;
+    margin-left: -4px;
 }
 .bars>p{
     
@@ -91,80 +92,69 @@ h1{
 }
 hr{
     width: 400px;
-    margin-top: 50px;
-    margin-left: 25px;
-    color: var(--Medium-brown);
+    position: relative;
+    top: 70px;
+    left: 25px;
 }
 .cost{
     display: flex;
     gap: 120px;
-    margin-top: 50px;
-    margin-left: 30px;
+    position: relative;
+    top: 100px;
+    left: 30px;
     text-align: right;
 }
 #first{
-    height: 50px;
+    height: 40px;
 }
-#first:hover::after {
-    content: "$66.36"
-}
+
 #first>p{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 #second{
-    height: 80px;
+    height: 70px;
 }
-#second:hover::after {
-    content: "$20.06"
-}
+
 #second>p{
-    margin-top: 90px;
+    margin-top: 80px;
 }
 #third{
     height: 120px;
     background-color: var(--Cyan);
 }
-#third:hover::after {
-    content: "$52.36"
-}
+
 #third>p{
     margin-top: 130px;
 }
 #fourth{
-    height: 110px;
+    height: 90px;
 }
-#fourth:hover::after {
-    content: "$31.07"
-}
+
 #fourth>p{
-    margin-top: 120px;
+    margin-top: 100px;
 }
 #fifth{
-    height: 90px;
+    height: 70px;
 }
-#fifth:hover::after {
-    content: "$506.36"
-}
+
 #fifth>p{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 #sixth{
-    height: 115px;
+    height: 110px;
 }
-#sixth:hover::after {
-    content: "$100.36";
-}
+
 #sixth>p{
-    margin-top: 125px;
+    margin-top: 120px;
 }
 #seventh{
-    height: 90px;
+    height: 80px;
+    
 }
-#seventh:hover::after {
-    content: "$206.56"
-}
+
 #seventh>p{
-    margin-top: 100px;
+    margin-top: 90px;
+
 }
 h5{
     color: var(--Dark-brown);
@@ -174,4 +164,53 @@ h5{
 }
 .bars>div{
     display: none;
+}
+.bars>h4{
+    position: absolute;
+    top: 0px;
+    background-color: var(--Dark-brown);
+    color: var(--Very-pale-orange);
+    margin-left: -5px;
+}
+#first-price{
+    top: 270px;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+#second-price{
+    top: 240px;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+#third-price{
+    top: 190px;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+#fourth-price{
+    top: 220px;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+#fifth-price{
+    top: 240px;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+#sixth-price{
+    top: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+#seventh-price{
+    top: 230px;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
 }
